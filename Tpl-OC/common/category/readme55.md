@@ -1,0 +1,2 @@
+
+类别，分为Foundation类别和UIKit类别，里面封装了各种工具，比如加密。在先前提到的控制器代码分组中，private中有很多方法都可以抽离成category。

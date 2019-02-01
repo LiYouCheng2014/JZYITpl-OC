@@ -8,61 +8,205 @@
 
 #import "JZYILoginVC.h"
 
+static NSTimeInterval const JZYITutorialViewControllerNavigationFadeAnimationDuration = 0.3;
+static NSString * const RWTAboutViewControllerCompanyName = @"RayWenderlich.com";
+
+static CGFloat const RWTImageThumbnailHeight = 50.0;
+
 @interface JZYILoginVC ()
+
+@property (strong, nonatomic) NSString *descriptiveVariableName;
+//@property (strong, nonatomic) GADBannerView *googleAdView;
+//@property (strong, nonatomic) ADBannerView *iAdView;
+//@property (strong, nonatomic) UIWebView *adXWebView;
+//@property (assign, getter=isEditable) BOOL editable;
 
 @end
 
 @implementation JZYILoginVC
 
-#pragma mark - test 存放测试信息
-//临时的测试信息，都放在这里，便于快速调试。
 
-#pragma mark - push or pop 控制器
-//控制器跳转处理
+#pragma mark - Lifecycle
 
-#pragma mark - request 请求信息
-//请求处理
+- (instancetype)init {
+    
+    self = [super init];
+    if (self) {
+        
+//        switch (condition) {
+//            case 1:
+//                // ...
+//                break;
+//            case 2: {
+//                // ...
+//                // Multi-line example using braces
+//                break;
+//            }
+//            case 3:
+//                // ...
+//                break;
+//            default:
+//                // ...
+//                break;
+//        }
+        
+//        switch (condition) {
+//            case 1:
+//                // ** fall-through! **
+//            case 2:
+//                // code executed for values 1 and 2
+//                break;
+//            default:
+//                // ...
+//                break;
+//        }
+        
+//        RWTLeftMenuTopItemType menuType = RWTLeftMenuTopItemMain;
+//
+//        switch (menuType) {
+//            case RWTLeftMenuTopItemMain:
+//                // ...
+//                break;
+//            case RWTLeftMenuTopItemShows:
+//                // ...
+//                break;
+//            case RWTLeftMenuTopItemSchedule:
+//                // ...
+//                break;
+//        }
+    }
+    return self;
+}
 
-#pragma mark - public method 公共方法
-//提供给对外调用的公共方法，一般来说，我的控制器是很少有提供给外界调用的方法，在viewmodel中有比较多的公共方法。
-
-#pragma mark - private method 业务无关的尽量弄成category，方便别人调用
-//没有暴露给外面调用的方法。
-
-#pragma mark - life cycle 生命周期
-//工程的viewDidLoad、viewWillAppear、init、didReceiveMemoryWarning等方法都放在这里
+- (void)dealloc {
+    
+}
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-//- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+}
+
+- (void)didReceiveMemoryWarning {
+    
+    [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark - Custom Accessors
+
+- (void)setCustomProperty:(id)value {
+    
+    NSArray *names = @[@"Brian", @"Matt", @"Chris", @"Alex", @"Steve", @"Paul"];
+    NSDictionary *productManagers = @{@"iPhone": @"Kate", @"iPad": @"Kamal", @"Mobile Web": @"Bill"};
+    NSNumber *shouldUseLiterals = @YES;
+    NSNumber *buildingStreetNumber = @10018;
+}
+
+- (id)customProperty {
+    
+    return nil;
+}
+
+
+#pragma mark - IBActions
+
+- (IBAction)submitData:(id)sender {
+    
+//    NSInteger arrayCount = self.array.count;
+//    view.backgroundColor = [UIColor orangeColor];
+//    [UIApplication sharedApplication].delegate;
+    
+//    CGRect frame = self.view.frame;
 //
-//    [super viewWillAppear:animated];
-//}
+//    CGFloat x = CGRectGetMinX(frame);
+//    CGFloat y = CGRectGetMinY(frame);
+//    CGFloat width = CGRectGetWidth(frame);
+//    CGFloat height = CGRectGetHeight(frame);
+//    CGRect frame = CGRectMake(0.0, 0.0, width, height);
 //
-//- (void)viewDidDisappear:(BOOL)animated {
+//    if (![someOther boolValue]) {
 //
-//    [super viewDidDisappear:animated];
+//        return;
+//    }
+    
+//    NSError *error;
+//    if (![self trySomethingWithError:&error]) {
+//        // Handle Error
+//    }
+}
+
+
+#pragma mark - Public
+
+- (void)publicMethod {
+    
+//    if (user.isHappy) {
+//        //Do something
+//    } else {
+//        //Do something else
+//    }
+    
+//    if (someObject) {
+//
+//    }
+//
+//    if (![anotherObject boolValue]) {
+//
+//    }
+    
+//    if (!error) {
+//
+//        return success;
+//    }
+    
+//    NSInteger value = 5;
+//    result = (value != 0) ? x : y;
+//
+//    BOOL isHorizontal = YES;
+//    result = isHorizontal ? x : y;
+}
+
+
+#pragma mark - Private
+
+- (void)privateMethod {
+    
+    // blocks are easily readable
+    [UIView animateWithDuration:1.0 animations:^{
+        // something
+    } completion:^(BOOL finished) {
+        // something
+    }];
+}
+
+
+#pragma mark - Protocol conformance
+
+#pragma mark - UITextFieldDelegate
+
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
+
+
+#pragma mark - NSCopying
+
+//- (id)copyWithZone:(NSZone *)zone {
+//
 //}
 
-//- (void)didReceiveMemoryWarning {
-//    
-//    [super didReceiveMemoryWarning];
-//}
 
-#pragma mark - event response 事件响应包括手势和按钮等
-//事件响应，包含手势、按钮、通知等等事件的处理
+#pragma mark - NSObject
 
-#pragma mark - delegate 具体到某个delegate，比如UITableViewDelegate
-//代理或者数据源
-
-#pragma mark - view layout 子视图的布局
-//界面布局
-
-#pragma mark - getters and setters 构造器
-//get和set方法
+- (NSString *)description {
+    
+    return @"";
+}
 
 @end

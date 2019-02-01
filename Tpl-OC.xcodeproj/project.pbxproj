@@ -99,6 +99,7 @@
 		049942C521F2E01D0013AAF9 /* readme79.md in Resources */ = {isa = PBXBuildFile; fileRef = 049942C421F2E01D0013AAF9 /* readme79.md */; };
 		049942C721F2E0240013AAF9 /* readme80.md in Resources */ = {isa = PBXBuildFile; fileRef = 049942C621F2E0240013AAF9 /* readme80.md */; };
 		049942C921F2E0280013AAF9 /* readme81.md in Resources */ = {isa = PBXBuildFile; fileRef = 049942C821F2E0280013AAF9 /* readme81.md */; };
+		0499441421F83E350013AAF9 /* JZYIReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499441321F83E350013AAF9 /* JZYIReformer.m */; };
 		3D3914A389180EF46635D4D8 /* libPods-Tpl-OCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE62237D8EA75EB2CC915A /* libPods-Tpl-OCTests.a */; };
 		610C13298B7AAF814EF45039 /* libPods-Tpl-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C301A52E503379E850774 /* libPods-Tpl-OC.a */; };
 		EA2F4DE30BCBEA918691107E /* libPods-Tpl-OCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE793B9710AB0EA1620CA93 /* libPods-Tpl-OCUITests.a */; };
@@ -224,6 +225,8 @@
 		049942C421F2E01D0013AAF9 /* readme79.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme79.md; sourceTree = "<group>"; };
 		049942C621F2E0240013AAF9 /* readme80.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme80.md; sourceTree = "<group>"; };
 		049942C821F2E0280013AAF9 /* readme81.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme81.md; sourceTree = "<group>"; };
+		0499441221F83E350013AAF9 /* JZYIReformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZYIReformer.h; sourceTree = "<group>"; };
+		0499441321F83E350013AAF9 /* JZYIReformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZYIReformer.m; sourceTree = "<group>"; };
 		391AD94CF346D00979C2889D /* Pods-Tpl-OCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tpl-OCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tpl-OCUITests/Pods-Tpl-OCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		403C301A52E503379E850774 /* libPods-Tpl-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tpl-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE4CA825EF202FFD275B6BE /* Pods-Tpl-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tpl-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tpl-OC/Pods-Tpl-OC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -629,6 +632,8 @@
 			isa = PBXGroup;
 			children = (
 				0499422E21F2DAF00013AAF9 /* readme11.md */,
+				0499441221F83E350013AAF9 /* JZYIReformer.h */,
+				0499441321F83E350013AAF9 /* JZYIReformer.m */,
 			);
 			path = reformer;
 			sourceTree = "<group>";
@@ -1705,6 +1710,7 @@
 				0499428321F2DD690013AAF9 /* JZYILoginVC.m in Sources */,
 				0499413721F2C7130013AAF9 /* AppDelegate.m in Sources */,
 				0499428021F2DCC60013AAF9 /* JZYITabBarController.m in Sources */,
+				0499441421F83E350013AAF9 /* JZYIReformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
